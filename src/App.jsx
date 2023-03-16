@@ -9,7 +9,6 @@ import "./App.css";
 function App() {
   const [locationData, setLocationData] = useState({});
   const [residentData, setResidentData] = useState([]);
-
   useEffect(() => {
     const fetchRandomLocationData = async () => {
       const response = await fetch("https://rickandmortyapi.com/api/location");
