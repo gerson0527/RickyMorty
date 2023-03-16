@@ -189,3 +189,41 @@ input[type="text"]:focus {
 .suggestion:hover {
   background-color: #f2f2f2;
 }
+.resident{
+  border: 1px solid ;
+  position: relative;
+  border-radius: 10px;
+  background-color: #031619ec;
+  margin: 0 auto;
+  border-radius: 1rem;
+  max-width: 300px;
+  height: 470px;
+  color: white;
+}
+.resident img{
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  height: 300px;
+  width: 100%;
+}
+.resident__conten{
+  padding: 10px;
+}
+.resident__name{
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid aquamarine;
+  margin-bottom: 10px;
+}
+span{
+  color: aquamarine;
+}
+.resident__status{
+  position: absolute;
+  background-color: #031619ec;
+  top: 1.5rem;
+  left: 0px;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

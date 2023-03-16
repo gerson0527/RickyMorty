@@ -16,16 +16,31 @@ function ResidentInfo({ url }) {
     return <div>Loading resident information...</div>;
   }
 
-  const { name, image, gender, species, status } = residentData;
+  const { name, image, gender, species, status, episode, origin } =
+    residentData;
 
   return (
     <div className="resident">
       <img src={image} alt={name} />
-      <div>
-        <h3>{name}</h3>
-        <p>Gender: {gender}</p>
-        <p>Species: {species}</p>
-        <p>Status: {status}</p>
+      <div className="resident__conten">
+        <h3 className="resident__name">{name}</h3>
+        <p className="resident__Gender">
+          <span>Gender: </span>
+          {gender}
+        </p>
+        <p className="resident__Species">
+          <span>Species: </span>
+          {species}
+        </p>
+        <p className="resident__status">{status}</p>
+        <p>
+          <span>apariciones en episodios:</span>
+          {episode.length}
+        </p>
+        <p>
+          <span>origen:</span>
+          {origin.name}
+        </p>
       </div>
     </div>
   );
